@@ -3,6 +3,7 @@ import Food from "./pages/Food"
 import Road from "./pages/Road"
 import Clean from "./pages/Clean"
 import Card from "./components/Card"
+import AddData from "./components/AddData"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 
@@ -13,11 +14,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route pcleanath='/' element={<Home />} />
           <Route path='/clean' element={<Clean/>} />
           <Route path='/food' element={<Food />} />
           <Route path='/road' element={<Road />} />
-          <Route path="card" element={<Card />} />
+          <Route path="adddata" element={<AddData />} />
         </Routes>
       </BrowserRouter>
     </>
