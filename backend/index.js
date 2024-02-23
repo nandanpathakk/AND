@@ -24,6 +24,11 @@ app.use(fssaiIssueRouter)
 const { adminprojectRouter } = require("./routes/adminproject_routes")
 app.use(adminprojectRouter)
 
+//for clean program
+const { cleanprogramRouter } = require("./routes/cleanprogram_routes")
+app.use(cleanprogramRouter)
+
+
 app.get('/', (req, res) => {
     res.send({
         message: "api is working now"
