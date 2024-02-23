@@ -2,6 +2,7 @@ import Home from "./pages/Home"
 import Food from "./pages/Food"
 import Road from "./pages/Road"
 import Clean from "./pages/Clean"
+import Card from "./components/Card"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/clean' element={<Clean/>} />
           <Route path='/food' element={<Food />} />
           <Route path='/road' element={<Road />} />
+          <Route path="card" element={<Card />} />
         </Routes>
       </BrowserRouter>
     </>

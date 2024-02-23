@@ -1,30 +1,11 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-
-export default function Card({ getApi }) {
-
-    const [issue, setIssue] = useState([]);
-
-    useEffect(() => {
-        axios.get("http://localhost:3001/cleanissue")
-            .then(function (response) {
-                setIssue(response.data.data)
-                console.log(response.data.data)
-            })
-    }, [])
+export default function Card({issue, issueDesc}) {
 
     return (
         <div>
-            hello
-            {issue.map(function(data){
-                return (
-                    <div>
-                        <div>{data.issue}</div>
-                        <div>{data.issueDesc}</div>
-                    </div>
-                )
-
-            })}
+                      <div>
+                            <div>{issue}</div>
+                            <div>{issueDesc}</div>
+                        </div>
         </div>
     )
 }
