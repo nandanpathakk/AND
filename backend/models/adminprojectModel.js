@@ -1,10 +1,8 @@
 const mongoose = require("mongoose")
 
 const adminprojectSchema = mongoose.Schema({
-    projectImage: {data: Buffer, contentType: String},
-    // issueImage: {type: String, required: true},
-    project: {type: String, required: true},
-    projectDesc: {type: String, required: true},
+    project: {type: String},
+    projectDesc: {type: String},
 })
 
 

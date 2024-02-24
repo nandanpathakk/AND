@@ -1,18 +1,7 @@
 const express = require("express")
 const adminprojectRouter = express.Router()
 const { adminprojectModel } = require("../models/adminprojectModel");
-const multer = require("multer")
 
-const storage = multer.diskStorage({
-    destination: function (req,file,cb){
-        return cb(null, "./adminProjectUploads")
-    },
-    filename: function (req,file,cb){
-        return cb(null, `${Date.now()}-${file.originalname}`)
-    }
-})
-
-const upload = multer({ storage })
 
 //for reading data
 adminprojectRouter.get("/adminproject",async(req, res) => {
@@ -21,14 +10,9 @@ adminprojectRouter.get("/adminproject",async(req, res) => {
 });
 
 //create or post data
-adminprojectRouter.post("/adminprojectcreate",upload.single("issueImage"),async(req,res)=>{
+adminprojectRouter.post("/adminprojectcreate",async(req,res)=>{
     console.log(req.body)
-    console.log(req.file)
     const data = new adminprojectModel({
-        projectImage: {
-            data: req.file.filename,
-            contenType: "image"
-        },
         project: req.body.project,
         projectDesc: req.body.projectDesc
     })
