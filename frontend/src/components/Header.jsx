@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link, useLocation } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
+import logo from "../assets/logo.svg"
 
 
 export default function Header() {
@@ -15,21 +16,21 @@ export default function Header() {
         <div className="flex justify-around items-center text-black">
             <div className=" pl-[35px] pt-[39px]">
                 <Link to={"/"}> 
-                <img className="w-32 h-12" src="" alt="Logo" />
+                <img className="w-28 h-10" src={logo} alt="Logo" />
                 </Link>
             </div>
             <div className="flex items-center justify-between w-[569px] text-l font-red-hat font-medium">
-                <p className={isSelected('/') ? ' text-black border-b-2' : "text-black"}>
+                <p className={isSelected('/') ? ' text-black border-b-2 border-gray-400' : "text-black"}>
                     <Link to="/">Home</Link>
                 </p>
         
-                <p className={isSelected('/clean') ? 'text-black border-b-2' : "text-black"}>
+                <p className={isSelected('/clean') ? 'text-black border-b-2 border-gray-400' : "text-black"}>
                     <Link to="/clean">Cleanliness Issue</Link>
                 </p>
-                <p className={isSelected('/food') ? 'text-black border-b-2' : 'text-black'}>
+                <p className={isSelected('/food') ? 'text-black border-b-2  border-gray-400' : 'text-black'}>
                     <Link to="/food" >Food Issue</Link>
                     </p>
-                    <p className={isSelected('/road') ? 'text-black' : 'text-black'}>
+                    <p className={isSelected('/road') ? 'text-black border-b-2 border-gray-400' : 'text-black'}>
                     <Link to="/road" >Road Issue</Link>
                     </p>
             </div>

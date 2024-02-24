@@ -2,9 +2,9 @@ import Header from "../components/Header"
 import Card from "../components/Card"
 import { useState, useEffect } from "react";
 import axios from 'axios'
+import AddData from "../components/AddData";
+
 export default function Food() {
-
-
     const [issue, setIssue] = useState([]);
 
     useEffect(() => {
@@ -14,14 +14,18 @@ export default function Food() {
                 console.log(response.data.data)
             });
     }, []);
-    return <div className="m-10">
+    return <div>
         <Header />
+        <div className="m-10 grid grid-cols-2 gap-5">
         {
             issue.map((data) => {
-                return <div className="grid grid-cols-2">
+                return <div >
                     <Card issue={data.issue} issueDesc={data.issueDesc} />
                 </div>
             })
         }
+        </div>
+        <AddData postapi={"http://localhost:3000/fssaiissuecreate"} />
+
     </div>
 }
