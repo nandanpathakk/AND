@@ -32,7 +32,7 @@ export default function Dashboard({ getapi }) {
                 </div>
 
             </div>
-            <div className="bg-[#262B30] min-h-screen text-white p-10"> 
+            <div className="rounded-[21px] bg-[#262B30] min-h-screen text-white p-10"> 
             <div className="flex items-center justify-between pb-10">
                 <div>
                     Complains
@@ -41,7 +41,7 @@ export default function Dashboard({ getapi }) {
             </div>
             <div>
                 <div>
-                <div className="grid grid-cols-3 pl-5 justify-around font-bold text-lg bg-[#777777] bg-opacity-50">
+                <div className="grid grid-cols-3 pl-5 p-2 justify-around font-bold text-lg bg-[#777777] bg-opacity-50">
                                 <div>Urgency</div>
                                 <div>Title</div>
                                 <div>Picture</div>
@@ -49,7 +49,7 @@ export default function Dashboard({ getapi }) {
                 </div>
             {
                     issue.map(function (data) {
-                        return <div className="grid grid-cols-3 justify-between p-5 items-center">
+                        return <div className="grid grid-cols-3 justify-between p-5 items-center bg-[#5D5D5D] bg-opacity-20">
                             <div>{data.issueLevel}</div>
                             <div>{data.issue}</div>
                             <div className="w-[100px]"><img src={exg} alt="" /></div>
