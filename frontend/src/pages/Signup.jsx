@@ -15,11 +15,11 @@ export default function SignUp(){
                     <input type="password" name="" id="" onChange={(e) => setPassword(e.target.value)} placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" required></input>
             </div>
             <div class="text-right mt-2">
-             </div>
+            </div>
             <button type="submit" onClick={SignUp} class="w-full block bg-gray-800 hover:bg-grey-400 focus:bg-grey-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">Sign Up</button>
             </form>
-            <p class="mt-8">Already have an account? <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Log In</a></p>
-            <br></br><p><a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Admin</a></p>
+            <p class="mt-8">Already have an account? <a href="login" class="text-grey-800 hover:text-blue-700 font-semibold">Log In</a></p>
+            <br></br><p><a href="Adminlogin" class="text-grey-800 hover:text-blue-700 font-semibold">Admin Login</a></p>
         </div>
         </div>
         </section>

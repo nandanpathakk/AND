@@ -6,6 +6,9 @@ import Card from "./components/Card"
 import AddData from "./components/AddData"
 import Login from "./pages/login"
 import SignUp from "./pages/Signup"
+import Adminlogin from "./pages/Adminlogin"
+import Adminsignup from "./pages/Adminsignup"
+
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 
@@ -23,6 +26,8 @@ function App() {
           <Route path="adddata" element={<AddData />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
+          <Route path="Adminlogin" element={<Adminlogin />} />
+          <Route path="Adminsignup" element={<Adminsignup />} />
         </Routes>
       </BrowserRouter>
     </>

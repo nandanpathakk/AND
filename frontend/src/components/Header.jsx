@@ -38,7 +38,7 @@ export default function Header() {
                 <CiSearch className="w-6 h-6 text-black" />
                 </div>
                 <div>
-                    <button className="border py-[3px] px-[30px] rounded-full text-[11px] font-bold text-black font-['Raleway']">Sign Up</button>
+                    <button className="border py-[3px] px-[30px] rounded-full text-[11px] font-bold text-black font-['Raleway']"><Link to='/signup'>Sign Up</Link></button>
                 </div>
             </div>
 

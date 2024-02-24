@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-export default function Login(){
+export default function Adminlogin(){
     return <div>
         
         
@@ -19,12 +19,12 @@ export default function Login(){
             <div class="text-right mt-2">
                 <a href="#" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">Forgot Password?</a>
             </div>
-            <button type="submit" onClick={Login} class="w-full block bg-gray-800 hover:bg-grey-400 focus:bg-grey-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">Log In</button>
+            <button type="submit" onClick={Adminlogin} class="w-full block bg-gray-800 hover:bg-grey-400 focus:bg-grey-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">Log In</button>
             </form>
-            <p class="mt-8">Need an account? <a href="Signup" class="text-grey-800 hover:text-blue-700 font-semibold">Create an account</a></p>
-            <br></br><p><a href="Adminlogin" class="text-grey-800 hover:text-blue-700 font-semibold">Admin Login</a></p>
+            <p class="mt-8">Need an account? <a href="#" class="text-gray-800 hover:text-blue-700 font-semibold">Create an account</a></p>
+             
         </div>
         </div>
         </section>
     </div>
-    }
+}

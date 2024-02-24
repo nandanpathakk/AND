@@ -21,7 +21,7 @@ cleanprogramRouter.get("/cleanprogram",async(req, res) => {
 });
 
 //create or post data
-cleanIssueRouter.post("/cleanprogramcreate",upload.single("Image"),async(req,res)=>{
+cleanprogramRouter.post("/cleanprogramcreate",upload.single("Image"),async(req,res)=>{
     console.log(req.body)
     console.log(req.file)
     const data = new cleanprogramModel({
